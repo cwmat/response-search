@@ -2,9 +2,6 @@
 
 TODO
 
-![Logo](https://github.com/emarco177/documentation-helper/blob/main/static/banner.gif)
-[![udemy](https://img.shields.io/badge/LangChain%20Udemy%20Course-%2412.99-green)](https://www.udemy.com/course/langchain/?couponCode=LANGCHAINCD8C0B4060)
-
 ## Tech Stack
 
 Client: Streamlit
