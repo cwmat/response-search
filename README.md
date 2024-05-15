@@ -16,6 +16,10 @@ To run this project, you will need to add the following environment variables to
 
 `PINECONE_API_KEY`
 `OPENAI_API_KEY`
+`LANGCHAIN_TRACING_V2`
+`LANGCHAIN_API_KEY`
+`LANGCHAIN_PROJECT`
+`PROJECT_PROFILE_HELPER_PASSWORD`
 
 ## Run Locally
 
@@ -31,11 +35,10 @@ Go to the project directory
   cd documentation-helper
 ```
 
-Download LangChain Documentation
+Download Docx data and place in
 
 ```bash
-  mkdir langchain-docs
-  wget -r -A.html -P langchain-docs  https://api.python.langchain.com/en/latest
+  ./data/
 ```
 
 Install dependencies
@@ -44,7 +47,15 @@ Install dependencies
   pipenv install
 ```
 
-Start the flask server
+Push data to Pinecone (need to create the index first and update the name in `ingestion.py` and `backend/core.py`)
+
+Run ingestion script to hydrate Pinecone index with docx embeddings
+
+```bash
+  pipenv run ingest
+```
+
+Start the streamlit server
 
 ```bash
   pipenv run start
