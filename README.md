@@ -26,8 +26,10 @@ To run this project, you will need to add the following environment variables to
 Clone the project
 
 ```bash
-  git clone https://github.com/emarco177/documentation-helper.git
+  git clone git@github.com:cwmat/response-search.git
 ```
+
+See `https://github.com/emarco177/documentation-helper.git` for more context, forked from this repo.
 
 Go to the project directory
 
